@@ -9,7 +9,7 @@ let order = (fruit_name,call_production)=>{
     setTimeout(() => {
         console.log(`${stocks.fruits[fruit_name]} selected...`)
         call_production();
-    }, 2000)
+    }, 5000)
 };
 let production = ()=>{
     setTimeout(()=>{
@@ -34,4 +34,4 @@ let production = ()=>{
         },1000)
     },0000)
 };
-order(0,production);
+order(1,production);
