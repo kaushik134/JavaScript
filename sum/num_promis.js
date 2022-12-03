@@ -1,24 +1,28 @@
-let number = 999;
-let s = 0
-let sum = (work) => {
+let sum = (number1) => {
+    while (number1 >= 9) {
+        console.log(number1);
+        let sum1 = 0;
+        while (number1 != 0) {
+            sum1 = sum1 + number1 % 10;
+            number1 = parseInt(number1 / 10);
+        }
+        number1 = sum1;
+    }
+    console.log()
+    return number1;
+}
+let total = (number, work) => {
+
     return new Promise((resolve, reject) => {
+
         if (number > 9) {
-            resolve(work())
-        } else {
-            reject(console.log(number))
+            resolve(console.log(work(number)));
+        }
+        else {
+            reject(console.log(number));
         }
     })
 }
-sum(() => { Arr = Array.from(String(number), Number) })
-    .then(() => {
-        s = 0;
-        Arr.forEach(x => {
-            s += x;
-        })
-        console.log(s)
-        if (s <= 9) {
-            return s;
-        } else {
-            
-        }
-    })
+
+let number = 9;
+total(number, sum);
