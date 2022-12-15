@@ -64,4 +64,5 @@
 // }
 // let user = getStudName.bind(stud);
 // console.log(typeof user)
+// console.log(user)
 // user()
