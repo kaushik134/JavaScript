@@ -18,8 +18,8 @@ let order = (time, work) => {
 }
 order(2000, () => { console.log(`${stocks.fruits[0]} was selected`) })
     .then(() => {
-        order(2000, () => { console.log(`${stocks.fruits[0]} was selected`) })
+        order(2000, () => { console.log(`${stocks.liquid[0]} was selected`) })
     })
     .then(() => {
-        order(2000, () => { console.log(`${stocks.fruits[0]} was selected`) })
+        order(2000, () => { console.log(`${stocks.holder[0]} was selected`) })
     })
